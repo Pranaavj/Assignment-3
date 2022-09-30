@@ -1,0 +1,18 @@
+class Main {
+    public static void main(String[] args) {
+
+        String str = "Radar", backStr = "";
+
+        int strLength = str.length();
+
+        for (int i = (strLength - 1); i >= 0; --i) {
+            backStr = backStr + str.charAt(i);
+        }
+
+        if (str.toLowerCase().equals(backStr.toLowerCase())) {
+            System.out.println(str + " -true");
+        } else {
+            System.out.println(str + " -false");
+        }
+    }
+}
