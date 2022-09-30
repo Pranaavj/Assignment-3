@@ -1,0 +1,19 @@
+class Main {
+  public static void main(String[] args) {
+
+   
+    String text = "hello everyone. let's write some useful Java code today. we will begin with strings." ;
+
+    
+    String firstLetter = text.substring(0, 1);
+    String remainingLetters = text.substring(1, text.length());
+
+    
+    firstLetter = firstLetter.toUpperCase();
+
+    
+    text = firstLetter + remainingLetters;
+    System.out.println("Name: " + text);
+
+  }
+}
